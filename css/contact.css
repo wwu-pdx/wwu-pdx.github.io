@@ -1,0 +1,26 @@
+* {
+    /*box-sizing: border-box;*/
+    font-family: sans-serif;
+    font-size: 1.9vw;
+    
+    
+  }
+body{
+    background-color: gray;
+    padding: 10%;
+
+}
+
+
+
+.flex-column{
+    border:1px solid;
+    border-radius: 10px;
+    width: 100%;
+   
+     
+}
+.form-group, .col{
+    margin: 1.5%;
+}
+
