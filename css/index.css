@@ -12,7 +12,6 @@
   }
 
   header {
-    /*background-image: linear-gradient(to right,black,  rgb(2, 19, 7),black);*/
      
     position: relative;
     top: 0;
@@ -74,9 +73,10 @@
     display: inline-block;
     text-decoration: none;
     display: block;
-    
-   
-    
+    background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
    
   }
   
@@ -113,7 +113,7 @@
   .about{
     background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
     left:10%;
-    top:10%;
+    top:10vh;
     position: absolute;
   }
   
@@ -124,7 +124,7 @@
     height:60vh;
     
     z-index: 10;
-   
+    border:2px solid red;
   }
   
   #text1 span#b {
@@ -153,14 +153,14 @@
   .projects{
     
     position: absolute;
-    top:30%;
+    top:30vh;
     left:30%;  
   }
   .contact{
     background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
     position: absolute;
     right:10%;
-    top: 50%;
+    top: 50vh;
   }
 
   .slider {
@@ -185,7 +185,9 @@
   .slider > a:focus {
     background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(47, 34, 238));
   }
-
+  .slider > a:hover {
+    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(47, 34, 238));
+  }
  
   /* Don't need button navigation */
   @supports (scroll-snap-type) {
@@ -240,6 +242,7 @@
   img{
     
     display: block;
+    border:2px solid red;
     
 
   }
@@ -255,3 +258,42 @@
     
   }
   
+
+  @media (max-width: 476px) {
+    body {
+      
+      margin:1%;
+      width:98%
+      
+    }
+    .flex-container {
+      height:98%;
+      width:99%;
+      
+      
+    }
+    .flex-container form{
+      width: 100%;
+      
+     
+    }
+  }
+
+  @media (max-width: 476px) {
+    .box{
+      height: 15vh;
+    }
+   
+  }
+  
+  @media (min-width: 477px) and (max-width: 768px) {
+   .box{
+     height: 30vh;
+   }
+   
+  }
+  
+  @media (min-width: 769px) {
+    
+    
+  }
