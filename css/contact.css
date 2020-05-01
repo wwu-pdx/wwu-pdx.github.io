@@ -1,15 +1,20 @@
 * {
     /*box-sizing: border-box;*/
     font-family:  "Lucida Bright", Georgia, serif;
-    font-size: 1.9vw;
-    color:white
+    font-size: 1.5vw;
+    color:white;
+    
     
     
   }
 body{
-    background-image:  url("../img/bg.jpg");
-    padding: 10%;
-
+    background-image:  url("../img/bg.jpg");   
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-size: cover;
+    padding: 5% 15%;
+    
+    
 }
 
 
@@ -18,11 +23,13 @@ body{
     border:1px solid;
     border-radius: 10px;
     width: 100%;
+    max-height: 95vh; 
+   
    
      
 }
 .form-group, .col{
-    margin: 1.5%;
+    margin: 2%;
 }
 
 

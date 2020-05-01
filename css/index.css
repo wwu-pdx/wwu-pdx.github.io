@@ -16,14 +16,18 @@
      
     position: relative;
     top: 0;
+    right:5%
    
     
   }
   
   h1{
-    text-align: left; 
-    font-size: 2vw;
+    text-align: right; 
+    font-size: 2.2vw;
     padding: 1%;
+    background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(41, 30, 207));
+    -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
   }
 
   
@@ -186,7 +190,7 @@
   font-size: 1vw;
 }
 
-/* The dots/bullets/indicators */
+/* The dots bullets */
 .dot {
 
   width: 0.5em;
@@ -197,7 +201,7 @@
   transition: background-color 0.6s ease;
 }
 
-.activedot {
+.activedot, .dot:hover{
   background-image: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
 }
 
@@ -226,69 +230,6 @@
     
   }
   
-  
-
-
-  /*.slider {
-
-   
-    overflow: hidden;
-   
-  }
-  .slider > a {
-    display: inline-flex;
-    width: 1em;
-    
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    
-  }
-  .slider > a:active {
-    font-weight: bold;
-  }
-  .slider > a:focus {
-    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(47, 34, 238));
-  }
-  .slider > a:hover {
-    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(47, 34, 238));
-  }
- 
-  
-
-  .slides {
-    
-    display: flex;
-    overflow-x: hidden;
-    
-    scroll-snap-type: x mandatory;  
-
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-   
-    box-shadow: 5px 10px 20px rgb(141, 4, 233);
-    
-    
-  }
-
-  .slide {
-    scroll-snap-align: start;
-
-    flex-shrink: 0;
-    
-    
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }*/
-
- 
   
 
   footer {
