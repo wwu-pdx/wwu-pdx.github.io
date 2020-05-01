@@ -15,7 +15,7 @@
   header {
      
     position: relative;
-    top: 0;
+    top:0.3%;
     right:5%
    
     
@@ -23,11 +23,13 @@
   
   h1{
     text-align: right; 
-    font-size: 2.2vw;
-    padding: 1%;
-    background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(41, 30, 207));
+    font-size: 3vw;
+    background: linear-gradient(to bottom,rgb(163, 32, 130),white, rgb(47, 34, 238));
     -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montez', cursive;
+    
+    
   }
 
   
@@ -140,24 +142,25 @@
   }
   
 
-  #text1 span#b {
+  .text .b {
     display: block;
-    font-size: 120%;
+    
     
     
   }
   
-  #text1:hover span#b {
+  .text:hover .b {
     display: none;
     
   }
   
-  #text1 span#a {
+  .text  .a {
     display: none;
   }
   
-  #text1:hover span#a {
-    display: inline;
+  .text:hover .a, .a>a {
+    display: block;
+    font-size: 80%;
     
   }
    /* Slideshow container */
