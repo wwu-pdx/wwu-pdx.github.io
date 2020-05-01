@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
     <title>Portfolio</title>
   </head>
-  <body>
-    
-    
+  <body >   
     <header>
       <h1>Wenjing Wu</h1>
     </header>
+    <main role="main">
     <section class="home">
       <nav>
         <ul class="navlis">
@@ -25,8 +23,8 @@
       </nav>
      <br>
     </section>
-    <section class="about" id="about">
-      <div class="box ">         
+    <section class="about " id="about">
+      <div class="box addht " >         
         <div id="text1"  >
           <span id="a">
             I love coding<br>
@@ -41,8 +39,8 @@
 
     <!-- https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/-->
     <section class="projects" id="projects">
-      <div class="box">
-        <div class="slider" id="slider">
+      <div class="box static">
+        <!--<div class="slider" id="slider">
           <a href="#slide-1">1</a>
           <a href="#slide-2">2</a>
           <a href="#slide-3">3</a>
@@ -53,17 +51,45 @@
           <div class="slide" id="slide-3"><img src="img/c3.PNG" alt="project3"></div>  
           </div>       
         </div>   
+      </div>-->
+      <div >
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
       </div>
+     
+      <div class="slideshow">
+      
+      <div class="slides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="img" src="img/c1.PNG" alt="project">
+        <div class="cap">Project One</div>
+      </div>
+      
+      <div class="slides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="img" src="img/c2.PNG" alt="project">
+        <div class="cap">Project Two</div>
+      </div>
+      
+      <div class="slides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="img" src="img/c3.PNG" alt="project">
+        <div class="cap">Project Three</div>
+      </div>
+    </div>
+      </div>
+
     </section>
-    <section class="contact" id="contact">
-      <div class="box" src="contact.html" target="_blank">
+    <section class="contact " id="contact">
+      <div class="box addht " src="contact.html" target="_blank">
         <a href="contact.html" target="_blank">Contact Me</a>
        
       </div>
     </section>
     <!--https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/-->
     <script>
-      $("#slides > div:gt(0)").hide();
+      /*$("#slides > div:gt(0)").hide();
         setInterval(function() {
           $('#slides > div:first')
             .fadeOut(1000)
@@ -71,8 +97,37 @@
             .fadeIn(1000)
             .end()
             .appendTo('#slides');
-        }, 5000);
+        }, 5000);*/
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("slides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" activedot", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " activedot";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        $(document).ready(function() {
+    
+            var addht = $('.addht');
+            var img = $('.img');
+            
+            addht.height(img.height());
+
+        });
       </script>
+      </main>
     <footer>
       <p>503-599-3000 | wwu@pdx.edu |SW 1900 4th Ave, Portland, OR </p>
     </footer>

@@ -16,7 +16,7 @@
      
     position: relative;
     top: 0;
-    
+   
     
   }
   
@@ -32,19 +32,14 @@
     background-repeat:no-repeat;
     background-position:center; 
     background-size: cover;
-    
-    position: relative;
-    height: 230vh;
+    position: relative;  
+    height:200vh
     
   }
- 
-  
   
   nav {
     
-    display: flex;
-    
-
+    display: flex;   
   }
   .navlis {
     list-style-type: none;
@@ -110,24 +105,37 @@
   }
   .home{
     position: relative;
+    
   }
   .about{
+    
     background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
     left:10%;
     top:10%;
     position: absolute;
   }
-  
+  .projects{
+   
+    position: absolute;
+    top:30%;
+    left:30%;  
+  }
+  .contact{
+    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
+    position: absolute;
+    right:10%;
+    top: 50%;
+  }
   .box{
     display:flex;
-    align-items: center;
-    justify-content: center;
-    height:60vh;
-    
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-start;
     z-index: 10;
-    border:2px solid red;
+    border:5px solid green;
   }
   
+
   #text1 span#b {
     display: block;
     font-size: 120%;
@@ -148,23 +156,80 @@
     display: inline;
     
   }
-  
+   /* Slideshow container */
+.slideshow {
+  max-width: 100%;
+  position: relative;
  
+  border:5px solid yellow;
   
-  .projects{
-    
-    position: absolute;
-    top:30%;
-    left:30%;  
-  }
-  .contact{
-    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
-    position: absolute;
-    right:10%;
-    top: 50%;
-  }
+}
+.slides{
+  display: flex;
+  flex-direction: column;
+}
 
-  .slider {
+/* Caption text */
+.cap {
+  background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+ 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-align: left;
+  font-size: 1vw;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+
+  width: 0.5em;
+  height: 0.5rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activedot {
+  background-image: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  
+  img{  
+    border:2px solid red;   
+    display:block;
+    
+  }
+  
+  
+
+
+  /*.slider {
 
    
     overflow: hidden;
@@ -190,12 +255,7 @@
     background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(47, 34, 238));
   }
  
-  /* Don't need button navigation */
-  @supports (scroll-snap-type) {
-    .slider > a {
-      display: none;
-    }
-  }
+  
 
   .slides {
     
@@ -212,18 +272,6 @@
     
   }
 
-  /*.slides::-webkit-scrollbar {
-    width: 1%;
-    height: 3%;
-  }
-  .slides::-webkit-scrollbar-thumb {
-    background: rgb(127, 99, 128);
-    background-image: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
-    border-radius: 10px;
-  }
-  .slides::-webkit-scrollbar-track {
-    background: transparent;
-  }*/
   .slide {
     scroll-snap-align: start;
 
@@ -238,16 +286,9 @@
     justify-content: center;
     align-items: center;
     
-  }
-  
-  img{
-    
-    display: block;
-    border:2px solid red;
-    width: 100%;
-    
+  }*/
 
-  }
+ 
   
 
   footer {
@@ -262,41 +303,8 @@
   }
   
 
-  @media (max-width: 476px) {
-    body {
-      
-      margin:1%;
-      width:98%
-      
-    }
-    .flex-container {
-      height:98%;
-      width:99%;
-      
-      
-    }
-    .flex-container form{
-      width: 100%;
-      
-     
-    }
-  }
 
-  @media (max-width: 476px) {
-    .box{
-      height: 15vh;
-    }
-   
-  }
-  
-  @media (min-width: 477px) and (max-width: 768px) {
-   .box{
-     height: 30vh;
-   }
-   
-  }
-  
-  @media (min-width: 769px) {
     
-    
-  }
+ 
+
+ 
