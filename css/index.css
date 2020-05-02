@@ -1,51 +1,45 @@
 * {
     font-family:  "Lucida Bright", Georgia, serif;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     color: #FFF;
     /*text-shadow: 2px 2px 2px rgb(255, 255, 255);*/
-    border:1px solid red;
+    
     
     text-align: center;  
     margin:auto;
     padding: auto;  
     width: 100%;
+    
    
   }
 /*General */
   h1{
     text-align: right; 
-    font-size: 4rem;
-    background: linear-gradient(to bottom,rgb(163, 32, 130),white, rgb(47, 34, 238));
+    font-size: 5vw;
+    background: linear-gradient(to bottom,rgb(62, 27, 158),white, teal);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Montez', cursive;
-    
-    
+    font-family: 'Montez', cursive; 
+    width: 96%;
+    padding-top: 2%;
+   
   }
   h2{
-    font-size: 1.5em;
+    font-size: 2.2vw;
+    text-align: inherit;
 
   }
   h3{
-    font-size: 1rem;
+    font-size: 1.5vw;
     text-align: inherit;
   }
 
-  header {
-   
-   margin-top: 2%;
-   padding-right: 15%;
-    
-  }
-  
   
   body{
     background-image:  url("../img/bg.jpg");
     background-repeat:no-repeat;
     background-position:center; 
-    background-size: cover;
-     
-    
+    background-size: cover;   
   }
   
   nav {
@@ -56,9 +50,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: flex-start; 
-    align-content: flex-start;
-    text-align: start;
+    justify-content: center; 
+    align-content: center;
+    text-align: center;
     margin: 0;
     padding: 0;
   }
@@ -74,18 +68,18 @@
    
     text-decoration: none;
     display: block;
-    background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
+    background: linear-gradient(to bottom,rgb(163, 32, 163),white, rgb(34, 214, 238));
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5vw;
+    font-size: 2vw;
    
   }
   
   .navlis li a:hover{
     color: rgba(98, 15, 194, 0.979);
     text-decoration: underline;
-    font-size: 1rem;
+    font-size: 2.2vw;
   }
   
   .navlis li a:active{
@@ -98,46 +92,54 @@
     text-decoration: underline;
   
   }
+
+
+  /*https://www.youtube.com/watch?v=7U7EebDUPXc*/
   .overlay img{
        width:100%;
   }
   .overlay{   
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: 1fr 1fr 1fr 4fr 2fr 1fr 1fr;
     column-gap:1px;
     
-    width:90%;
-    margin-top: 1vh;
+    width:88%;
+    margin-top: 3%;
 
   }
   .about{
     grid-column: 1/span 3;
-    grid-row: 1/span 3;
-
-    background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
-    padding-top: 300px;
-    padding-bottom: 300px;
+    grid-row: 1/span 3;   
+    transform: rotate(-20deg);
+    background-image: linear-gradient(to right, rgb(141, 32, 163),black, rgb(141, 32, 163));
+    padding-top: 25%;;
+    padding-bottom: 25%;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgb(243, 240, 243);
   }
   .projects{
     grid-column: 3/span 3;
     grid-row: 3/span 3;
+    z-index: 2;
+    transform: rotate(5deg);
   }
   .contact{
     grid-column: 5/span 3;
     grid-row:  5/span 3;
-
-    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
-    padding-top: 300px;
-    padding-bottom: 300px;
+    background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
+    padding-top: 25%;;
+    padding-bottom: 25%;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgb(243, 240, 243);
+    transform: rotate(30deg);
   }
   
-  .section{
-    
+  section{
+    border-radius: 0.3vw;
     
   }
-
   section:hover{
-    z-index: 11 !important;
+    z-index: 4 !important;
 
   }
 
@@ -145,23 +147,21 @@
   .box{
     display:flex;
     flex-direction: column;
-    align-items: stretch;
-    align-content: flex-start;
-    z-index: 10;
-    border:5px solid green;
+    align-content: center;
+    align-items: center;
+   
+    border-radius: 0.3vw;
+    width: 96%;
   }
   
 /*hover to change text in section box*/
   .text .b {
     display: block;
     
-    
-    
   }
   
   .text:hover .b {
-    display: none;
-    
+    display: none;  
   }
   
   .text  .a {
@@ -170,15 +170,14 @@
   
   .text:hover .a,.a>a{
     display: block;
-    font-size: 0.8em;
-    
+    font-size: 1.3vw;  
   }
   
    /* Slideshow container */
 .slideshow {
   max-width: 100%;
- 
-  border:5px solid yellow;
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgb(243, 240, 243);
+  border-radius: 0.3vw;
   
 }
 .slides{
@@ -187,9 +186,10 @@
 }
 
 img{  
-  border:2px solid red;   
+  
   display:block;
   width: 100%;
+  
   
 }
 
@@ -198,26 +198,35 @@ img{
 .cap {
   
   text-align: left;
-  font-size: 0.7em;
+  font-size: 1.3vw;
   display:inline-block;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.9;
+  border-bottom-left-radius: 0.3vw;
+  border-bottom-right-radius: 0.3vw;
+  
  
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
   background-color: black;
-  text-align: left;
-  font-size: 0.6em;
-  opacity: 0.6;
+  text-align: right;
+  font-size: 1vw;
+  opacity: 0.9;
+  border-top-left-radius: 0.3vw;
+  border-top-right-radius: 0.3vw;
+  padding-top: 1%;
+  
+  
+  
 }
 
 /* The dots bullets */
 .dot {
 
-  width: 0.7em;
-  height: 0.7em;
+  width: 0.8em;
+  height: 0.8em;
   background-color: rgb(245, 245, 245);
   border-radius: 50%;
   display: inline-block;
@@ -253,15 +262,12 @@ img{
 }
 
   
-  
-  
 
   footer {
     
-    font-size: 0.8em;
-    padding: 1%;
-    
-    
+    font-size: 0.9vw;
+    margin-top: 15%;
+    margin-bottom: 5%;
     
   }
   
