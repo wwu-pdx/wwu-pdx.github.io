@@ -3,7 +3,7 @@
     font-size: 1.2rem;
     color: #FFF;
     /*text-shadow: 2px 2px 2px rgb(255, 255, 255);*/
-   
+    border:1px solid red;
     
     text-align: center;  
     margin:auto;
@@ -32,11 +32,9 @@
   }
 
   header {
-     
-    position: relative;
-    top:0.3%;
-    right:5%
    
+   margin-top: 2%;
+   padding-right: 15%;
     
   }
   
@@ -46,26 +44,20 @@
     background-repeat:no-repeat;
     background-position:center; 
     background-size: cover;
-    position: relative;  
-    height:200vh
+     
     
   }
   
   nav {
-    
-    display: flex;   
+    width: 40%;
   }
   .navlis {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: flex-start;
-    
+    justify-content: flex-start; 
     align-content: flex-start;
-    
-    
-    
     text-align: start;
     margin: 0;
     padding: 0;
@@ -75,18 +67,18 @@
     display: inline-block;
     list-style-type: none;
     width: 30%;
-    
-    
+
   }
   
   .navlis li a {
-    display: inline-block;
+   
     text-decoration: none;
     display: block;
     background: linear-gradient(to right,rgb(163, 32, 130),white, rgb(47, 34, 238));
     text-transform: uppercase;
     -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5vw;
    
   }
   
@@ -106,40 +98,50 @@
     text-decoration: underline;
   
   }
-
-  section{
-    width: 40%;
+  .overlay img{
+       width:100%;
+  }
+  .overlay{   
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap:1px;
     
-    display: flex;
+    width:90%;
+    margin-top: 1vh;
+
+  }
+  .about{
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+
+    background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  .projects{
+    grid-column: 3/span 3;
+    grid-row: 3/span 3;
+  }
+  .contact{
+    grid-column: 5/span 3;
+    grid-row:  5/span 3;
+
+    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  
+  .section{
+    
+    
   }
 
   section:hover{
     z-index: 11 !important;
 
   }
-  .home{
-    position: relative;
-    
-  }
-  .about{
-    
-    background-image: linear-gradient(to right, rgb(34, 230, 238),black,rgb(34, 230, 238));
-    left:10%;
-    top:10%;
-    position: absolute;
-  }
-  .projects{
-   
-    position: absolute;
-    top:30%;
-    left:30%;  
-  }
-  .contact{
-    background-image: linear-gradient(to right,rgb(163, 32, 130),black, rgb(163, 32, 130));
-    position: absolute;
-    right:10%;
-    top: 50%;
-  }
+
+
   .box{
     display:flex;
     flex-direction: column;
@@ -175,7 +177,6 @@
    /* Slideshow container */
 .slideshow {
   max-width: 100%;
-  position: relative;
  
   border:5px solid yellow;
   
@@ -188,6 +189,7 @@
 img{  
   border:2px solid red;   
   display:block;
+  width: 100%;
   
 }
 
@@ -258,8 +260,6 @@ img{
     
     font-size: 0.8em;
     padding: 1%;
-    position: absolute;
-    bottom: 0;
     
     
     

@@ -12,18 +12,16 @@
   <body >   
     <header>
       <h1>WenWu</h1>
-    </header>
-    <main role="main">
-    <section class="home">
-      <nav>
+    </header>   
+      <nav role="navigation">
         <ul class="navlis">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact" >Contact</a></li>
         </ul>
       </nav>
-     <br>
-    </section>
+   
+    <main role="main" class="overlay">   
     <section class="about " id="about">
       <div class="box addht " >         
         <div class="text"  >
@@ -94,6 +92,7 @@
         </div>
       </div>
     </section>
+  </main>
     <!--https://stackoverflow.com/questions/42565983/how-to-pause-a-slideshow-on-mouse-over-->
     <script>
         //auto slideshow
@@ -161,17 +160,11 @@
             //setTimeout(showSlide, 2000); // Change image every 2 seconds
           }
        
-        $(document).ready(function() {
-    
-            var addht = $('.addht');
-            var img = $('.img');
-            
-            addht.height(img.height());
-
-        });
+       
+        
     
       </script>
-      </main>
+      
     <footer>
       <p>503-599-3000 | wwu@pdx.edu |SW 1900 4th Ave, Portland, OR </p>
     </footer>
