@@ -11,16 +11,7 @@
     width: 100%;
    
   }
-
-  header {
-     
-    position: relative;
-    top:0.3%;
-    right:5%
-   
-    
-  }
-  
+/*General */
   h1{
     text-align: right; 
     font-size: 4rem;
@@ -39,6 +30,17 @@
     font-size: 1rem;
     text-align: inherit;
   }
+
+  header {
+     
+    position: relative;
+    top:0.3%;
+    right:5%
+   
+    
+  }
+  
+  
   body{
     background-image:  url("../img/bg.jpg");
     background-repeat:no-repeat;
@@ -147,7 +149,7 @@
     border:5px solid green;
   }
   
-
+/*hover to change text in section box*/
   .text .b {
     display: block;
     
@@ -182,6 +184,13 @@
   display: flex;
   flex-direction: column;
 }
+
+img{  
+  border:2px solid red;   
+  display:block;
+  
+}
+
 
 /* Caption text */
 .cap {
@@ -242,11 +251,6 @@
 }
 
   
-  img{  
-    border:2px solid red;   
-    display:block;
-    
-  }
   
   
 

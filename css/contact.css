@@ -1,7 +1,7 @@
 * {
     /*box-sizing: border-box;*/
     font-family:  "Lucida Bright", Georgia, serif;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     color:white;
     
     
@@ -12,12 +12,9 @@ body{
     background-repeat:no-repeat;
     background-position:center; 
     background-size: cover;
-    padding: 5% 15%;
-    
+    padding: 5% 15%;    
     
 }
-
-
 
 .flex-column{
     border:1px solid;

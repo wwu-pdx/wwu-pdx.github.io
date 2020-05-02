@@ -39,16 +39,16 @@
     </section>
 
     <!-- https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/-->
+    <!--https://www.w3schools.com/w3css/w3css_slideshow.asp-->
     <section class="projects" id="projects" >
       <div class="box static">
+
       <div >
         <span class="dot"  onmouseenter="pauseSlides()" onmouseleave="startSlides()" onclick="currentSlide(0);pauseSlides()"></span> 
         <span class="dot"  onmouseenter="pauseSlides()" onmouseleave="startSlides()" onclick="currentSlide(1);pauseSlides()"></span> 
         <span class="dot"  onmouseenter="pauseSlides()" onmouseleave="startSlides()" onclick="currentSlide(2);pauseSlides()"></span> 
-      </div>
-     
-      <div class="slideshow" id="slideshow" onmouseenter="pauseSlides()" onmouseleave="startSlides()">
-      
+      </div>     
+      <div class="slideshow" id="slideshow" onmouseenter="pauseSlides()" onmouseleave="startSlides()">   
       <div class="slides fade" >
         <div class="numbertext">1 / 3</div>
         <a href="https://github.com/wwu-pdx/CS545-ML-Group-Project" target="_blank"><img class="img" src="img/p1.jpg" hrealt="project"></a>
@@ -80,8 +80,8 @@
       </div>
     </div>
       </div>
-
     </section>
+
     <section class="contact " id="contact">
       <div class="box addht " >       
         <div class="text"  >
@@ -96,7 +96,8 @@
     </section>
     <!--https://stackoverflow.com/questions/42565983/how-to-pause-a-slideshow-on-mouse-over-->
     <script>
-
+        //auto slideshow
+        //pause on hover
           var slideIndex = 1;
           var millis = 1500;
           var interval;
